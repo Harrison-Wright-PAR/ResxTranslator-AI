@@ -37,6 +37,7 @@ namespace ResxTranslator
 			Width = Math.Min(1700, Screen.FromControl(this).WorkingArea.Width - 600);
 			Height = Math.Min(1000, Screen.FromControl(this).WorkingArea.Height - 300);
 
+			SetupAwsProfileControls();
 			PopulateLanguages();
 
 			languageList.Dock = DockStyle.Fill;
@@ -67,6 +68,41 @@ namespace ResxTranslator
 			{
 				inputBox.Text = inputPath;
 			}
+		}
+
+
+		private void SetupAwsProfileControls()
+		{
+			// Populate region dropdown with common AWS regions
+			PopulateRegionDropdown();
+
+			// Load current AWS configuration
+			var config = AwsConfigManager.LoadConfig();
+			profileTextBox.Text = config.ProfileName;
+			
+			// Set the selected region
+			SetSelectedRegion(config.Region);
+
+			// Save profile when changed
+			profileTextBox.TextChanged += (s, e) =>
+			{
+				if (!string.IsNullOrWhiteSpace(profileTextBox.Text))
+				{
+					var currentConfig = AwsConfigManager.LoadConfig();
+					AwsConfigManager.SaveConfig(profileTextBox.Text.Trim(), currentConfig.Region);
+				}
+			};
+
+			// Save region when changed
+			regionDropdown.SelectedIndexChanged += (s, e) =>
+			{
+				if (regionDropdown.SelectedItem != null)
+				{
+					var selectedRegion = ((RegionItem)regionDropdown.SelectedItem).Code;
+					var currentConfig = AwsConfigManager.LoadConfig();
+					AwsConfigManager.SaveConfig(currentConfig.ProfileName, selectedRegion);
+				}
+			};
 		}
 
 
@@ -387,6 +423,8 @@ namespace ResxTranslator
 			logBox.Visible = true;
 			logBox.Clear();
 
+			profileTextBox.Enabled = false;
+			regionDropdown.Enabled = false;
 			inputBox.Enabled = false;
 			codeBox.Enabled = false;
 			browseFileButton.Enabled = false;
@@ -495,6 +533,8 @@ namespace ResxTranslator
 
 		private void Restart(object sender, EventArgs e)
 		{
+			profileTextBox.Enabled = true;
+			regionDropdown.Enabled = true;
 			inputBox.Enabled = true;
 			codeBox.Enabled = true;
 			browseFileButton.Enabled = true;
@@ -515,5 +555,58 @@ namespace ResxTranslator
 			restartButton.Visible = false;
 			translateButton.Visible = true;
 		}
-	}
+
+		private void PopulateRegionDropdown()
+		{
+			var regions = new List<RegionItem>
+			{
+				new RegionItem("US East 1 (N. Virginia)", "us-east-1"),
+				new RegionItem("US West 2 (Oregon)", "us-west-2"),
+				new RegionItem("US West 1 (N. California)", "us-west-1"),
+				new RegionItem("Europe West 1 (Ireland)", "eu-west-1"),
+				new RegionItem("Europe West 2(London)", "eu-west-2"),
+				new RegionItem("Europe West 3(Paris)", "eu-west-3"),
+				new RegionItem("Europe Central 1(Frankfurt)", "eu-central-1"),
+				new RegionItem("Asia Pacific Southeast 2(Sydney)", "ap-southeast-2"),
+				new RegionItem("Asia Pacific Southeast 1(Singapore)", "ap-southeast-1"),
+				new RegionItem("Asia Pacific Northeast 1(Tokyo)", "ap-northeast-1"),
+				new RegionItem("Asia Pacific South 1(Mumbai)", "ap-south-1"),
+				new RegionItem("Canada 1(Central)", "ca-central-1"),
+				new RegionItem("South America Esat 1(São Paulo)", "sa-east-1")
+			};
+
+			regionDropdown.DisplayMember = "DisplayName";
+			regionDropdown.ValueMember = "Code";
+			regionDropdown.DataSource = regions;
+		}
+
+		private void SetSelectedRegion(string regionCode)
+		{
+			foreach (RegionItem item in regionDropdown.Items)
+			{
+				if (item.Code == regionCode)
+				{
+					regionDropdown.SelectedItem = item;
+					break;
+				}
+			}
+		}
+
+		private class RegionItem
+		{
+			public string DisplayName { get; set; }
+			public string Code { get; set; }
+
+			public RegionItem(string displayName, string code)
+			{
+				DisplayName = displayName;
+				Code = code;
+			}
+
+			public override string ToString()
+			{
+				return DisplayName;
+			}
+		}
+    }
 }

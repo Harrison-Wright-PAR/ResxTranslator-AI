@@ -498,12 +498,12 @@ namespace ResxTranslator
 			catch (BedrockAccessDeniedException ex)
 			{
 				logger($"❌ Access Error: {ex.Message}" + NL, Color.Red);
-				throw; // Critical error - stop processing
+				return text; // Critical error - stop processing
 			}
 			catch (BedrockConfigurationException ex)
 			{
 				logger($"❌ Configuration Error: {ex.Message}" + NL, Color.Red);
-				throw; // Critical error - stop processing
+				return text; // Critical error - stop processing
 			}
 			catch (BedrockRateLimitException ex)
 			{

@@ -25,13 +25,16 @@ namespace ResxTranslator
         {
             try
             {
+                var config = AwsConfigManager.LoadConfig();
                 var chain = new CredentialProfileStoreChain();
-                if (!chain.TryGetAWSCredentials("legacy", out var credentials))
+                
+                if (!chain.TryGetAWSCredentials(config.ProfileName, out var credentials))
                 {
-                    throw new BedrockConfigurationException("AWS credentials not found. Please configure your AWS credentials using the AWS CLI or SDK.");
+                    throw new BedrockConfigurationException($"AWS profile '{config.ProfileName}' not found. Please configure your AWS credentials or update the profile name in the AWS settings.");
                 }
 
-                _client = new AmazonBedrockRuntimeClient(credentials, Amazon.RegionEndpoint.USWest2);
+                var regionEndpoint = Amazon.RegionEndpoint.GetBySystemName(config.Region);
+                _client = new AmazonBedrockRuntimeClient(credentials, regionEndpoint);
                 _conversationHistory = new List<Message>();
             }
             catch (Exception ex)

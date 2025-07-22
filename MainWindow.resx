@@ -117,20 +117,137 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="regionDropdown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 178</value>
+  </data>
+  <data name="regionDropdown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 21</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="hintOverrideBox.AutoSize" type="System.Boolean, mscorlib">
+  <data name="regionDropdown.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;regionDropdown.Name" xml:space="preserve">
+    <value>regionDropdown</value>
+  </data>
+  <data name="&gt;&gt;regionDropdown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regionDropdown.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;regionDropdown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="regionDropdownLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="regionDropdownLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="regionDropdownLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 177</value>
+  </data>
+  <data name="regionDropdownLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="regionDropdownLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="regionDropdownLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="regionDropdownLabel.Text" xml:space="preserve">
+    <value>AWS Region</value>
+  </data>
+  <data name="&gt;&gt;regionDropdownLabel.Name" xml:space="preserve">
+    <value>regionDropdownLabel</value>
+  </data>
+  <data name="&gt;&gt;regionDropdownLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regionDropdownLabel.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;regionDropdownLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="profileTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="profileTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 150</value>
+  </data>
+  <data name="profileTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 5</value>
+  </data>
+  <data name="profileTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 20</value>
+  </data>
+  <data name="profileTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;profileTextBox.Name" xml:space="preserve">
+    <value>profileTextBox</value>
+  </data>
+  <data name="&gt;&gt;profileTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profileTextBox.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;profileTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="profileLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="profileLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="profileLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 150</value>
+  </data>
+  <data name="profileLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="profileLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="profileLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="profileLabel.Text" xml:space="preserve">
+    <value>AWS Profile Name:</value>
+  </data>
+  <data name="&gt;&gt;profileLabel.Name" xml:space="preserve">
+    <value>profileLabel</value>
+  </data>
+  <data name="&gt;&gt;profileLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profileLabel.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;profileLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="hintOverrideBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="hintOverrideBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="hintOverrideBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 103</value>
+    <value>378, 67</value>
+  </data>
+  <data name="hintOverrideBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="hintOverrideBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 24</value>
+    <value>165, 17</value>
   </data>
   <data name="hintOverrideBox.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -148,7 +265,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;hintOverrideBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="sortBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -157,10 +274,13 @@
     <value>NoControl</value>
   </data>
   <data name="sortBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 133</value>
+    <value>378, 86</value>
+  </data>
+  <data name="sortBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="sortBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 24</value>
+    <value>206, 17</value>
   </data>
   <data name="sortBox.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -178,7 +298,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;sortBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="clearBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -187,10 +307,13 @@
     <value>NoControl</value>
   </data>
   <data name="clearBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 133</value>
+    <value>103, 86</value>
+  </data>
+  <data name="clearBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="clearBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
+    <value>90, 17</value>
   </data>
   <data name="clearBox.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -208,7 +331,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;clearBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="restartButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -219,30 +342,30 @@
   <data name="restartButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAlpJREFUOE+NVM1r1FAQj/pXuMkKHtT6gR/gyVNBqNSKlop605tnjx5E8do/oJts
-        V93WxeqqrR8H0UvFtS5YRJFq3UUptIiKtptMkt0k7yXPeUnebvaj1oEfJG9mfpn5zbxIXcbYJnncOq6o
-        MKloUJVVo46wZRUqsqbnlTH9GI+Jo3ubkjP3YXIZE70NUNqqQV+c1m5pVR+QNUPvkbQOYFXO1Prj9Mjk
-        cXO/rIF++rFFlDhw8KFFJhYc/8MvElTXaDC77AVX5xp0501oI2tVdo1txkrmuSMIGJv85PqcAB972k/b
-        Z2eeWKRFZpRCzVCTYXGYTKb4MrXo+uef2WT4kUUuv6rTClbGfQ0SsBPTLTIliwPAh3u9iF5iK+ls86sh
-        tucM7/mS53P/4h8aKMKvQV7CtpZFYGc/Y+8dX/gEdufB050o8OxTO64KKkgErgjiYl/AVgT675pJLZqY
-        qUZVjb51aHQGNm+tK3Aj5D46IVGi4rqUUo2VZND/oLQSyXnldSOsiN8ArlGxM/BwAUin0AJDOC2uJceR
-        OxC2ntJgAluDkWTgwH2TrDYCVvzi+jtuJJfP8E7OWOSHFY3kQcVtDUIzBiWpyLbgyztxePGFTaNtYYwT
-        TqOweVzQ8nfC9zW0hd806LslPgJzzUucyloHcXqGIDuHY/1aE3QtIyhx4bPr7xIkGqxty8CekEQYLw/R
-        JOMajeA6XH/ToKPzDr00W6eHbptxFSFqKbV2NE5vNzljHUCy8N79CylVL6ez5t44bR3DS5zOwClMmELS
-        JYQTAb6hHgU8H+r+sUnSX1R7J0CALtISAAAAAElFTkSuQmCC
+        vAAADrwBlbxySQAAAllJREFUOE+FVM9rE0EYXetfYWYjeFDrD/wBnjwVhJZY0VJRb3rz7NGDWLz2D2hm
+        0qhpG6xGTa09FL1UrDVgEUWiNUEppIiKNtmZ3U12d3ZnZHYzye4azYN3mXnf2+97M7OKEgfnO8C0cVqF
+        ZFZFpAogbgKITQBJBSAtp05pI0ITL4tAzeqHVURKAGKnD1d3ITIYr/eRhNowQFjrUfQPkm2QbgxFTMC0
+        fgQgop1fNKjaFqYeG3SmbHnvf1JWrbtspeawm2std98dEjHrdjbBBwDC62KDMc5nP9qeMGC8N36YHr/w
+        1KDhMf3MVETG5GK42GWcz2/Y3uVlk449Mej1l023UhernLco42eKXTM1o40oAOIHvYxe1ByWzERz2ZPF
+        zrNNxxP7G79dpsp9RHIKQLgmhfF5pt5ZXthI8ECOOJoVCC8ume2uSEUBiNhSJMK+smx2OHRfD2fR4UI1
+        6GryjeW2jUwx2l/Cfsx+sHyjUMdNJQHxVlzYj6tbQZw3XrX8jsQLEBkV4sITeULjQUuOFg0qshQ8eY/4
+        oycQmVEAJONh4fBDnW63GC98tr29t8OXDztnFwz63QiO5FHF7h4EwilFKfCdAOK3cvHqc9MNbgvnwrBY
+        dbxc2fJK36i4rz7Kv1w2eFd+hKx1HnEiYxwDiGBpdmnJpF8a0q4L6nGe/2R7+6UJIvXdaXIw+t4QTgGE
+        O2Yio/FFg9563XIn1y332krTPT6nh0dtJGDjVMREAqSNo/Ld/Y8JqJWSGf1QvD6KCT6QTJNzAOJ5gPAm
+        QNgKSL4CSPIA4tFeP7Y/VHsnQLG14XYAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="restartButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="restartButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 633</value>
+    <value>17, 435</value>
   </data>
   <data name="restartButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 3, 3</value>
+    <value>5, 5, 2, 2</value>
   </data>
   <data name="restartButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 46</value>
+    <value>55, 30</value>
   </data>
   <data name="restartButton.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -266,7 +389,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;restartButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="newStringsBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -275,10 +398,13 @@
     <value>NoControl</value>
   </data>
   <data name="newStringsBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 103</value>
+    <value>103, 67</value>
+  </data>
+  <data name="newStringsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="newStringsBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 24</value>
+    <value>148, 17</value>
   </data>
   <data name="newStringsBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -296,7 +422,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;newStringsBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="optionsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -305,10 +431,13 @@
     <value>NoControl</value>
   </data>
   <data name="optionsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 104</value>
+    <value>15, 68</value>
+  </data>
+  <data name="optionsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="optionsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
+    <value>46, 13</value>
   </data>
   <data name="optionsLabel.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -326,7 +455,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;optionsLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -337,29 +466,29 @@
   <data name="cancelButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAixJREFUOE+Vks1rE0EYxvdfMGlDLR48VDx4KKgXoeCpUC9+IFhxt6bqwVxUbEVL
-        xRYqFNuq1KKk1A9QelAQTaEo6EXEbjZNTBs02qClS2k+mrTutkm7ybqbp7PZzSbbBMHDb5h553med3Z2
-        KAAWZGER8XfDCN+lEbjRDH/XEcwMXQI/+QLrqQ0iserNSV5OIzFxC1x7LabO7KgK69yLiGeCyLcF5LMC
-        +EcnwdK2qkYLdC1m3W4zpDCkJjtKZmYXOFfDNqMNXtc+eNsMDV2PsOdzIYRShe8IXHDoG0w9vr18CykW
-        ROjqHtPMXWlB6ncUy55rZiP24iGsxjZBCV/6SaLRiXFg5uEIJOkv5IQe4us4hlV+Bdod8Y9PlU6qneI9
-        Cyr+pNXoZEDbEXxwD1lZRS75C+vLItTcGvgxYi7XEaaHR0FFR1osxSKhp+NQVfKV+RyWxs9WmAv09IKK
-        uY9XbHCdJyAkJNJZgiwrUIQ5hLsbK3UD90GtfOwuK9rh62IgJiUomTgiA4fxdbAPG+ks1MwifvYeLNM6
-        EHr9AZQSn4LPadeLzt2Y/+SHnIlirr9Jr5E7mb59HWlxE2vcKLyMrmXPNyK58Ed/DNHnp0t/or0Bgc4D
-        +tzERv5GE3zn6vQ17cDss1f6O9AGNb2A8M39pZB/UgN/z+WC2QzQUMR5RIaayWurqWIyaKtDkNxJ0aNh
-        ToqIwTf4cecoWKbMSO9EoM+FJc5LJFa9ZfH/gNoC52604oOVNVUAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAhxJREFUOE+dk99LU2EYx8+/kNNh0kUXRhddCNVNIHQl2E0/CCw6W7O6aDcVzSgx
+        UjAQf1SYFJN+QeFFQZSCFNRNRDvb3JpKrZQSh7hNnXamU8922vET2xnbPLMuuvi8vDzv8/2+z/u+zysA
+        QjGqPEP0TS/BWyL+a3X4mg8x2nOB0PAzVmJrGPPzkw01wdzQDTyNFbhObdsSybabycGhTSa6OCkTun8c
+        SSwrEZUgVjDmdOZNskNs2FEQW3bgsVcbhGW47XtwW3M5YhXBwY9ZE0GTv+I/Z86Jq/jy/DVKJMD45V15
+        sedSPbGfYeYHr+Q3ks4fYCmyjiB/6sAl5naymBm914ei/Ead0028jiMshRbJ3FHoYUOh0kwVbyWE6KMT
+        hjOaCNy9TVLVSC38YGU+jpZaJvSgAclwHyO9/QjhvnrDeXXGHw+gacBGitmB0yXiLK1tCBHn0ZIFT9Mx
+        5DkFLaWgqmnS8gTBlprSvK47CIvvW4qCJrzNFuILCunVKJNdB/nc3c5aIom2OsP3tv1FuWbGX75DSEdd
+        eG0mPWjbydQHH+pqmImOWj0mmhi5eZVEfJ1lTz9ui54rna1hYfqX3gzhpycLL9FYjb9pn6HcMryOWrxn
+        KnOmZsaevND7IDNoiWmC1/cWTP5JOb7Wi5s7MUM6PsVkTx1ua/kWohzWSgLd7aV/oZh44BXfOg8jWYqE
+        4nb87XZmPe6//8b/5Q/nbrTit46JhwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="cancelButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 690</value>
+    <value>17, 472</value>
   </data>
   <data name="cancelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 3, 3</value>
+    <value>5, 5, 2, 2</value>
   </data>
   <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 46</value>
+    <value>55, 30</value>
   </data>
   <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -380,16 +509,19 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="sheetPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="logBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 38</value>
+    <value>275, 25</value>
+  </data>
+  <data name="logBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="logBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 322</value>
+    <value>238, 211</value>
   </data>
   <data name="logBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -413,10 +545,13 @@
     <value>0</value>
   </data>
   <data name="languageList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 38</value>
+    <value>21, 25</value>
+  </data>
+  <data name="languageList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="languageList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 322</value>
+    <value>231, 211</value>
   </data>
   <data name="languageList.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -434,10 +569,13 @@
     <value>1</value>
   </data>
   <data name="sheetPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 202</value>
+    <value>103, 212</value>
+  </data>
+  <data name="sheetPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="sheetPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>796, 478</value>
+    <value>531, 253</value>
   </data>
   <data name="sheetPanel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -452,7 +590,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;sheetPanel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="estimationLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -461,13 +599,13 @@
     <value>NoControl</value>
   </data>
   <data name="estimationLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 166</value>
+    <value>100, 108</value>
   </data>
   <data name="estimationLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 20</value>
+    <value>2, 0, 2, 13</value>
   </data>
   <data name="estimationLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 20</value>
+    <value>64, 13</value>
   </data>
   <data name="estimationLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -485,7 +623,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;estimationLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="statusLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -497,10 +635,13 @@
     <value>NoControl</value>
   </data>
   <data name="statusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 691</value>
+    <value>100, 473</value>
+  </data>
+  <data name="statusLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
+    <value>46, 13</value>
   </data>
   <data name="statusLabel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -518,7 +659,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="translateButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -532,38 +673,38 @@
   <data name="translateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAABCFJREFUSEudlG1MW1UYx/thZpl+1US3ROc+7bvyMnFuiW7qZJEQNVgMiLxFYcRO
-        IE4KbDSwiS4RCYaXZZsEwbFZ3gR5mRKTQkNbShF5K1D6etve9t4LKLDygb/nXNp6gdUhT/LLzT3nPP//
-        uc9zzpW53e53GYYxu1wubi84nU7KtN1uTzabzQdljwoibiJgJxaLBf39/SAiu+aC9BLDZ4MykYMsWqQJ
-        BoMBfX196O3tFWltbUV2djYaGxvDY5SJiQnRgHyFxuPxHAvKRA6yWDRoaGhAWloaUlJSRJKTk5GQkAC5
-        XB4eo6jV6v0Z0FKMj4/DZDKJjI2NQa/Xw2g0Ijc3FzU1NeLYwsLC/gxC6HQ6sSxWq1V8pwaZmZkYGBgA
-        KWd43b4NJicnxfJQE5vNhvr6eigUil3NdjicGpttHwaU9vZ2scG1tbXIy8tDR0cHEXRsWzNrcWr+mN2n
-        ATnjKCwsRGJiIlQqFbTGGXSPeNA+7A1zc8A7lVHLZZ2+wr8dXSzhiy2iin2vxirsh7YZ0BprtVqUlZUh
-        NTUV+fn5SP/4IpKuTSC+kse5L4UwZyr4QNxlwR1TIjijQxRvwxqt9NeFDeg9KC8vF49lRkaGeObn5uZw
-        q02PsyoGMSVL/x8lvx42GBoaQkFBAZqamrC4uBg+MT2kNPGVwsMF9kD4JlOm5hm0/O6FedEd7keP7uEG
-        J0qXUNTCoa6fQ3pd5A1Qg2EXEdJOeHDhJoeXLgtQ3PZDP7VlEsng/WoBf1p8WF5ioZvx4eSV7fMhZE6n
-        O14/zbQVfO+ZjCvhAqGJ4hZ2xDDN3P9h0Gs4e5VflybFkt1XdXNgvCwMsz4IPEs2x4fnpchIcx/rGrYf
-        OVliT38+x8a8ULS1MKna92Kb1n30kxt8MjktTmnS+a8E/GryieIXbvHwcyx+MfgQK1kTIngbZLLjeQvx
-        T6ZOO45kWRClFJBWxTxFx+XfLr9JymaXJuXd5mFxsvi6k8Mp1ZJoNu/w4b2q3aUUxWkc/9T61jMZM/an
-        06c3j+UsbH52j3+urhOP191fS1I0/e16OVhj+vyu1w9BYPGbyQ/1MOkX6YHXx6KijYts8EHj5hPNmrXq
-        LkNg5WfjBqR0jW5A2bqKV1TLOEcaTpvqcLMw232YDUL70a3348zV7V8RlN+K63fsh9Qja593jQbYnSZ3
-        tAG8880KLjbysLpYFP3Ik9ss4LUgFWqOGLLIIc2W9iIo/W9U9Wwe7DQG5J2jG3c7DIG7P+keDDdpHqxl
-        3fiLHOElfFTL41IzhzfI70K609evCVDd40gfHmFAY3AQB9pHVw83a1YPV3asf5hUvcLEEXGaQC8YJSQg
-        hW5g59yW4n/E+evLsSdKhXlp0l6JVvJCUCZynCrFAfJnLItWCv6YEn5jzygFJuoSJ/8HbVeAmG5aes4A
-        AAAASUVORK5CYII=
+        vAAADrwBlbxySQAABBtJREFUSEudk2tMW2UYx/dhZpl+1US3xMs++V0pDJwzUaZOFgnRBYsBEQZRLrET
+        iJMCHQ1sQ5eIBMNlYZMgODa5DuQyJSaFhvZQisitQGlPz3nbnvacU1Bg5QN/cw5Qe9ky5El+ac77nuf5
+        nT7P+x5yOp0fEkIsLMvy+4FhGIk5mqZTLBbLkUOPC0KImRCCcKxWK4aGhmCxWCL2dhlgWfb58HoRwbLs
+        ipRAURQGBwcxMDAg097ejuzsbDQ3NwfWJKanp2UBwzA6l8t1IrxeRBBCZEFjYyPS09ORmpoqk5KSgsTE
+        RCiVysCaREdHx8EEUiumpqZgNptlJicnYTQaYTKZkJubi9raWnlteXn5YII9DAaD3BabzSY/S4ILFy5g
+        eHgYLMsG3juwYGZmRm6PJLHb7WhoaIBKpYoYtsPB6Oz2Awgkurq65AHX1dUhPz8f3d3dcDgcIe8sWBnd
+        nwsHFNA0jaKiIiQlJUGr1UJvmkffuAtdY+4ATcPu2cw6PuuNy8L7ipIgvt4hqsTzZoyKPhoikHqs1+tR
+        Xl6OtLQ0FBQUIOOzi0i+Oo2EKgFnr4kB4isFf5xGdEaXioxij5IQbAq1tz4gkO5BRUWFfCwzMzPlM7+4
+        uIibnUac0RJEl/r+P2phMyAYHR1FYWEhWlpasLKyEjgx/eMuJFSJkcn7JHCTJWaXCNr+cMOy4gzMo9/w
+        cMHJMh+K23jUD/HIqI/cDxaMsYRAP+1CXhOPWI0I1S0vjLM7kkcJPqoR8ZfVg1UfB8O8B6cuRxaXBQzj
+        TDDOkc7CH10zcaW8f2+jpI0bp+bI/Z9G3NSZK8JmcFJMmQ/VfTyImwO14IEocMhrEiKKywKKop7oHaOP
+        nyqlM17KsZNXindeTK7xvNqpd774+Q0hJU4jMsFJ574R8ZvZIxfPuynAy3P4lfIg5mGCvXg5fznh6bQ5
+        x/EsK6LUItKryTPSuvL71XdjNSIdnJR/S4CV4fBtD4/TWp8sW3J4cL46spX/Cb6wvfdc5jz9bMbc9omc
+        5e0v7wov1Pfgyfr7G8mqln/Y13Z7LP3+MOCFKHL43exFx5gXxnkP3B4OlZ38owUfN28/1arbqOml/Gv3
+        TFsIpndiC+r2dbyuXcXZKlEeqsPJwUJ7sLCLNI8+oxfxV0L/RUAgxfXb9NGO8Y2veif8XLjktt6PD75b
+        w8VmATaWQ/HPAuIrRby1S2UHDwvNIadJCJlFiECK6v7tIz0mv7JnYutON+W/84vhwViL7sFG1o2/Eavx
+        4dM6AZdaebxzLfRL374qQnuXx/nqxwikGBnB4a6J9WOtuvVjVd2bnyTXrJE4zU6CdMEkwnstIX1A+F54
+        7Yg4d3015mSZuBRebD8o1IIYXi8iTpfhsKJELFeoRW90qbC1b9QiibrEK/8FbVeAmOSEM/4AAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <data name="translateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="translateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>868, 691</value>
+    <value>579, 473</value>
   </data>
   <data name="translateButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 3, 3</value>
+    <value>5, 5, 2, 2</value>
   </data>
   <data name="translateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 46</value>
+    <value>55, 30</value>
   </data>
   <data name="translateButton.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -581,7 +722,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;translateButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="progressBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -590,10 +731,13 @@
     <value>NoControl</value>
   </data>
   <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 714</value>
+    <value>103, 488</value>
+  </data>
+  <data name="progressBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>693, 22</value>
+    <value>462, 14</value>
   </data>
   <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -608,7 +752,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="translationsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -617,10 +761,13 @@
     <value>NoControl</value>
   </data>
   <data name="translationsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 202</value>
+    <value>15, 212</value>
+  </data>
+  <data name="translationsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="translationsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
+    <value>67, 13</value>
   </data>
   <data name="translationsLabel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -638,7 +785,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;translationsLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="browseFolderButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -650,21 +797,24 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAAd0SU1FB9ULGg0YMGpJmnAAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAu
-        MjHxIGmVAAABBElEQVQ4T6WRsRGDMAxFPQU7ULtiCNbwCmxAnYo7j5AiDRMwgHsq5qBU9KUYGzDkcine
-        nbH9voRsiOgviptHlmWhYRgE7wNN00TrugpF4YhznkIIvNRvBM3zTNiX9NfzcSIXjuAMsgToZc/7EADW
-        /jYkyluASkkWgtt1lGbg+DyFZQG5rAElvgbgd0BePSd20ve9hGmAzCCJ2sEV2klgGUEpgMFaBpq1fMby
-        VcsDtPKU8qaQ99XLYsSzHGexBdxX/8hcOXhDzmp1CcAwrqvnosqo7hyfxVdAK1odgzGXSNuQufo4jvsA
-        0HUdX3CSjgG1bUtN05Bloa5rEaqq2sTI7uN3yLwBpM724PGQQrAAAAAASUVORK5CYII=
+        MjHxIGmVAAAA/0lEQVQ4T6WSsRGDMAxFPQU7UKtiCNbQCmxAnYo7jZAiDRMwgHsq5qD8OUkBAwZyuRT/
+        Dozfk5AdAIR/ki2cZZomdF1nEYkYhgHzPFuyzWdhFsQYsbyraBxH6LrZX89Hli1wjH5T2AS+WQAooNFn
+        uZUs8CpwKMGWyLuO0gx4J90ItrALzvJVoL+jOc7k2EnbtiZzgc0ggd7BVbyTKGyiJPjANtCT1lMIUQjM
+        ZEdpZ6rwvvoRcnCJMK2zWAX31T+waPUAJq9uAh3GdfUt6LBWZ04nEbQVr66DCZexthUmQt/3e4GmaRoI
+        s9l1QHVdo6oqEBHKsjSgKIrsZmbX9Ne8AaTO9uDjdyqmAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="browseFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="browseFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>958, 56</value>
+    <value>639, 36</value>
+  </data>
+  <data name="browseFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="browseFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 34</value>
+    <value>40, 22</value>
   </data>
   <data name="browseFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -682,19 +832,19 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;browseFolderButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="outputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="outputBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 60</value>
+    <value>103, 39</value>
   </data>
   <data name="outputBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 8</value>
+    <value>2, 2, 2, 5</value>
   </data>
   <data name="outputBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>796, 26</value>
+    <value>532, 20</value>
   </data>
   <data name="outputBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -709,7 +859,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;outputBox.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="outputLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -718,10 +868,13 @@
     <value>NoControl</value>
   </data>
   <data name="outputLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 63</value>
+    <value>15, 41</value>
+  </data>
+  <data name="outputLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="outputLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
+    <value>85, 13</value>
   </data>
   <data name="outputLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -739,7 +892,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;outputLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="browseFileButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -751,21 +904,24 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAAd0SU1FB9ULGg0YMGpJmnAAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAu
-        MjHxIGmVAAABBElEQVQ4T6WRsRGDMAxFPQU7ULtiCNbwCmxAnYo7j5AiDRMwgHsq5qBU9KUYGzDkcine
-        nbH9voRsiOgviptHlmWhYRgE7wNN00TrugpF4YhznkIIvNRvBM3zTNiX9NfzcSIXjuAMsgToZc/7EADW
-        /jYkyluASkkWgtt1lGbg+DyFZQG5rAElvgbgd0BePSd20ve9hGmAzCCJ2sEV2klgGUEpgMFaBpq1fMby
-        VcsDtPKU8qaQ99XLYsSzHGexBdxX/8hcOXhDzmp1CcAwrqvnosqo7hyfxVdAK1odgzGXSNuQufo4jvsA
-        0HUdX3CSjgG1bUtN05Bloa5rEaqq2sTI7uN3yLwBpM724PGQQrAAAAAASUVORK5CYII=
+        MjHxIGmVAAAA/0lEQVQ4T6WSsRGDMAxFPQU7UKtiCNbQCmxAnYo7jZAiDRMwgHsq5qD8OUkBAwZyuRT/
+        Dozfk5AdAIR/ki2cZZomdF1nEYkYhgHzPFuyzWdhFsQYsbyraBxH6LrZX89Hli1wjH5T2AS+WQAooNFn
+        uZUs8CpwKMGWyLuO0gx4J90ItrALzvJVoL+jOc7k2EnbtiZzgc0ggd7BVbyTKGyiJPjANtCT1lMIUQjM
+        ZEdpZ6rwvvoRcnCJMK2zWAX31T+waPUAJq9uAh3GdfUt6LBWZ04nEbQVr66DCZexthUmQt/3e4GmaRoI
+        s9l1QHVdo6oqEBHKsjSgKIrsZmbX9Ne8AaTO9uDjdyqmAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="browseFileButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="browseFileButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>958, 18</value>
+    <value>639, 12</value>
+  </data>
+  <data name="browseFileButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="browseFileButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 34</value>
+    <value>40, 22</value>
   </data>
   <data name="browseFileButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -783,16 +939,19 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;browseFileButton.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="codeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="codeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>700, 23</value>
+    <value>467, 15</value>
+  </data>
+  <data name="codeBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="codeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 28</value>
+    <value>168, 21</value>
   </data>
   <data name="codeBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -807,19 +966,19 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;codeBox.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="inputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="inputBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 23</value>
+    <value>103, 15</value>
   </data>
   <data name="inputBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 8</value>
+    <value>2, 2, 2, 5</value>
   </data>
   <data name="inputBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 26</value>
+    <value>359, 20</value>
   </data>
   <data name="inputBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -834,7 +993,7 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;inputBox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="inputLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -843,10 +1002,13 @@
     <value>NoControl</value>
   </data>
   <data name="inputLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 26</value>
+    <value>15, 17</value>
+  </data>
+  <data name="inputLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="inputLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
+    <value>71, 13</value>
   </data>
   <data name="inputLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -864,16 +1026,19 @@
     <value>resxTab</value>
   </data>
   <data name="&gt;&gt;inputLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>23</value>
   </data>
   <data name="resxTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 22</value>
+  </data>
+  <data name="resxTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="resxTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>20, 20, 20, 20</value>
+    <value>13, 13, 13, 13</value>
   </data>
   <data name="resxTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 761</value>
+    <value>691, 509</value>
   </data>
   <data name="resxTab.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -897,10 +1062,13 @@
     <value>Fill</value>
   </data>
   <data name="textControlPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 20</value>
+    <value>13, 13</value>
+  </data>
+  <data name="textControlPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="textControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 721</value>
+    <value>665, 483</value>
   </data>
   <data name="textControlPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -909,7 +1077,7 @@
     <value>textControlPanel</value>
   </data>
   <data name="&gt;&gt;textControlPanel.Type" xml:space="preserve">
-    <value>ResxTranslator.Panels.TextControlPanel, ResxTranslator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ResxTranslator.Panels.TextControlPanel, ResxTranslator, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;textControlPanel.Parent" xml:space="preserve">
     <value>textTab</value>
@@ -918,13 +1086,16 @@
     <value>0</value>
   </data>
   <data name="textTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 22</value>
+  </data>
+  <data name="textTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="textTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>20, 20, 20, 20</value>
+    <value>13, 13, 13, 13</value>
   </data>
   <data name="textTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 761</value>
+    <value>691, 509</value>
   </data>
   <data name="textTab.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -948,10 +1119,13 @@
     <value>Fill</value>
   </data>
   <data name="analyzeControlPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 20</value>
+    <value>13, 13</value>
+  </data>
+  <data name="analyzeControlPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="analyzeControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 721</value>
+    <value>665, 483</value>
   </data>
   <data name="analyzeControlPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -960,7 +1134,7 @@
     <value>analyzeControlPanel</value>
   </data>
   <data name="&gt;&gt;analyzeControlPanel.Type" xml:space="preserve">
-    <value>ResxTranslator.Panels.AnalyzeControlPanel, ResxTranslator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ResxTranslator.Panels.AnalyzeControlPanel, ResxTranslator, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;analyzeControlPanel.Parent" xml:space="preserve">
     <value>analyzeTab</value>
@@ -969,13 +1143,16 @@
     <value>0</value>
   </data>
   <data name="analyzeTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 22</value>
+  </data>
+  <data name="analyzeTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="analyzeTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>20, 20, 20, 20</value>
+    <value>13, 13, 13, 13</value>
   </data>
   <data name="analyzeTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 761</value>
+    <value>691, 509</value>
   </data>
   <data name="analyzeTab.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1001,11 +1178,14 @@
   <data name="toolsControlPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="toolsControlPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
   <data name="toolsControlPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="toolsControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 761</value>
+    <value>691, 509</value>
   </data>
   <data name="toolsControlPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1014,7 +1194,7 @@
     <value>toolsControlPanel</value>
   </data>
   <data name="&gt;&gt;toolsControlPanel.Type" xml:space="preserve">
-    <value>ResxTranslator.Panels.ToolsControlPanel, ResxTranslator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ResxTranslator.Panels.ToolsControlPanel, ResxTranslator, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;toolsControlPanel.Parent" xml:space="preserve">
     <value>toolsPage</value>
@@ -1023,10 +1203,13 @@
     <value>0</value>
   </data>
   <data name="toolsPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
+    <value>4, 22</value>
+  </data>
+  <data name="toolsPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="toolsPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 761</value>
+    <value>691, 509</value>
   </data>
   <data name="toolsPage.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1050,10 +1233,13 @@
     <value>Fill</value>
   </data>
   <data name="tabs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
+    <value>10, 10</value>
+  </data>
+  <data name="tabs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tabs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 794</value>
+    <value>699, 535</value>
   </data>
   <data name="tabs.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1089,10 +1275,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1078, 824</value>
+    <value>719, 555</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2959,11 +3145,14 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>938, 582</value>
+    <value>631, 392</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>15, 15, 15, 15</value>
+    <value>10, 10, 10, 10</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Resx Robo Translator</value>
