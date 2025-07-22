@@ -1,4 +1,4 @@
-﻿//************************************************************************************************
+//************************************************************************************************
 // Copyright © 2020 Steven M Cohn.  All rights reserved.
 //************************************************************************************************
 
@@ -6,7 +6,7 @@
 
 namespace ResxTranslator
 {
-	using GTranslate.Translators;
+	using System;
 	using System.Collections.Generic;
 	using System.Drawing;
 	using System.Globalization;
@@ -64,6 +64,7 @@ namespace ResxTranslator
 			"tl",		// Filipino = fil-PH
 			"fi",		// Finnish
 			"fr",		// French
+			"fr-ca",	// French (Canada)
 			"fy",		// Frisian
 			"gl",		// Galician
 			"ka",		// Georgian
@@ -283,16 +284,47 @@ namespace ResxTranslator
 				return text;
 			}
 
-			using (var translator = new AggregateTranslator())
+			try
 			{
-				if (fromCode == "auto")
+				using (var translator = new BedrockTranslator())
 				{
-					var lang = await translator.DetectLanguageAsync(text);
-					fromCode = lang.ISO6391;
-				}
+					if (fromCode == "auto")
+					{
+						fromCode = await translator.DetectLanguageAsync(text);
+					}
 
-				var result = await translator.TranslateAsync(text, toCode, fromCode);
-				return result.Translation;
+					return await translator.TranslateAsync(text, toCode, fromCode);
+				}
+			}
+			catch (BedrockModelNotFoundException ex)
+			{
+				logger?.Invoke($"❌ Model Error: {ex.Message}", Color.Red);
+				return text; // Return original text, don't crash the app
+			}
+			catch (BedrockAccessDeniedException ex)
+			{
+				logger?.Invoke($"❌ Access Error: {ex.Message}", Color.Red);
+				throw; // Critical error - stop everything
+			}
+			catch (BedrockConfigurationException ex)
+			{
+				logger?.Invoke($"❌ Configuration Error: {ex.Message}", Color.Red);
+				throw; // Critical error - stop everything
+			}
+			catch (BedrockRateLimitException ex)
+			{
+				logger?.Invoke($"⚠️ Rate Limit: {ex.Message} - Returning original text", Color.Orange);
+				return text; // Return original text, continue processing
+			}
+			catch (BedrockServiceException ex)
+			{
+				logger?.Invoke($"❌ Service Error: {ex.Message} - Returning original text", Color.Red);
+				return text; // Return original text, continue processing
+			}
+			catch (Exception ex)
+			{
+				logger?.Invoke($"❌ Unexpected Error: {ex.Message} - Returning original text", Color.Red);
+				return text; // Return original text, continue processing
 			}
 		}
 
@@ -451,10 +483,60 @@ namespace ResxTranslator
 			string text, string fromCode, string toCode,
 			CancellationTokenSource cancellation, StatusCallback logger)
 		{
-			using (var translator = new AggregateTranslator())
+			try
 			{
-				var result = await translator.TranslateAsync(text, toCode, fromCode);
-				return result.Translation;
+				using (var translator = new BedrockTranslator())
+				{
+					return await translator.TranslateAsync(text, toCode, fromCode);
+				}
+			}
+			catch (BedrockModelNotFoundException ex)
+			{
+				logger($"❌ Model Error: {ex.Message}" + NL, Color.Red);
+				return text; // Return original text to continue processing
+			}
+			catch (BedrockAccessDeniedException ex)
+			{
+				logger($"❌ Access Error: {ex.Message}" + NL, Color.Red);
+				throw; // Critical error - stop processing
+			}
+			catch (BedrockConfigurationException ex)
+			{
+				logger($"❌ Configuration Error: {ex.Message}" + NL, Color.Red);
+				throw; // Critical error - stop processing
+			}
+			catch (BedrockRateLimitException ex)
+			{
+				logger($"⚠️ Rate Limited: {ex.Message} Retrying in 2 seconds..." + NL, Color.Orange);
+				await Task.Delay(2000, cancellation.Token); // Wait 2 seconds
+				
+				if (!cancellation.IsCancellationRequested)
+				{
+					try
+					{
+						// Retry once after rate limit
+						using (var translator = new BedrockTranslator())
+						{
+							return await translator.TranslateAsync(text, toCode, fromCode);
+						}
+					}
+					catch (BedrockRateLimitException)
+					{
+						logger($"⚠️ Still rate limited, skipping translation for: '{text}'" + NL, Color.Orange);
+						return text; // Return original text and continue
+					}
+				}
+				return text;
+			}
+			catch (BedrockServiceException ex)
+			{
+				logger($"❌ Service Error: {ex.Message} Skipping this translation." + NL, Color.Red);
+				return text; // Return original text to continue processing
+			}
+			catch (Exception ex)
+			{
+				logger($"❌ Unexpected Error: {ex.Message} Skipping this translation." + NL, Color.Red);
+				return text; // Return original text to continue processing
 			}
 		}
 

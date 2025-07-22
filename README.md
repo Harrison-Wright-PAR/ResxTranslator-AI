@@ -1,5 +1,12 @@
-# ResxTranslator
-Translates entire resx files or individual bits of text to multiple languages.
+# ResxTranslator AI
+Translates entire resx files or individual bits of text to multiple languages using AWS Bedrock with Claude 3.5 Sonnet.
+
+## Prerequisites
+
+- AWS account with access to Amazon Bedrock
+- Claude 3.5 Sonnet model enabled in your AWS region
+- AWS credentials configured locally (via AWS CLI, environment variables, or IAM roles)
+- Appropriate IAM permissions for `bedrock:InvokeModel`
 
 There are four main tabs
 
@@ -50,11 +57,7 @@ The comment can include other text besides the word **!SKIP**.
 
 ### Using an Override Hint File
 
-While Google translator is generally quite good, there are nuances in languages that it can't
-predict and may make a native speaker question the appropriateness of the translation. For each
-language, you can provide an optional hint file that contains preferred translations for each
-resource identifier. This must be an XML file located in the same directory as the source resx
-file and must be named _name_._code_-hints.xml, for example Resources.de-DE-hints.xml.
+While AWS Bedrock with Claude 3.5 Sonnet provides high-quality translations, there are nuances in languages that may require specific terminology or context that benefits from manual override. For each language, you can provide an optional hint file that contains preferred translations for each resource identifier. This must be an XML file located in the same directory as the source resx file and must be named _name_._code_-hints.xml, for example Resources.de-DE-hints.xml.
 
 The contents of the hints file should look similar to the following:
 
@@ -79,12 +82,9 @@ The contents of the hints file should look similar to the following:
   </hint>
 </hints>
 ```
-When resources are translated to that language, ResxTranslator will first look in this hint file
-each resource identifier and use the available text before attempting to use Google translate.
+When resources are translated to that language, ResxTranslator will first look in this hint file for each resource identifier and use the available text before attempting to use AWS Bedrock for translation.
 
-Notice that the file includes a copy of the original source text. ResxTranslator uses this to
-detect if the source item has been updated since this hint was last created and display a warning
-that the hint may be out of date and needs correcting.
+Notice that the file includes a copy of the original source text. ResxTranslator uses this to detect if the source item has been updated since this hint was last created and display a warning that the hint may be out of date and needs correcting.
 
 ## Translate Text
 Translate one string, phrase, or paragraph of text.
